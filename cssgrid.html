@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1/0" />
+    <title>Flexbox</title>
+    <style>
+      .el--1 {
+        background-color: pink;
+        /* align-self: flex-start; */
+        /* flex-grow: 2; */
+      }
+      .el--2 {
+        background-color: aquamarine;
+      }
+      .el--3 {
+        background-color: burlywood;
+        height: 200px;
+      }
+      .el--4 {
+        background-color: red;
+      }
+      .el--5 {
+        background-color: thistle;
+      }
+      .el--6 {
+        background-color: aqua;
+      }
+      .el--7 {
+        background-color: blue;
+      }
+      .el--8 {
+        background-color: darkkhaki;
+        /* order: -1; */
+      }
+      .container--1 {
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 32px;
+        margin: 40px;
+        /* CSS GRID section*/
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px 200px;
+        /* gap: 30px; */
+        column-gap: 10px;
+        row-gap: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container--1">
+      <div class="el el--1">HTML</div>
+      <div class="el el--2">and</div>
+      <div class="el el--3">CSS</div>
+      <div class="el el--4">are</div>
+      <div class="el el--5">amazing</div>
+      <div class="el el--6">language</div>
+      <div class="el el--7">to</div>
+      <div class="el el--8">learn</div>
+    </div>
+  </body>
+</html>
