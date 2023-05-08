@@ -13,6 +13,11 @@
     />
     <title>Hero Section</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       html {
         font-family: "Rubik", sans-serif;
         color: #444;
@@ -22,30 +27,55 @@
         width: 1200px;
       }
       header {
-        background-color: orange;
+        /* background-color: orange; */
         height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: #fff;
       }
       nav {
         font-size: 20px;
         font-weight: 700;
+        padding-top: 32px;
         display: flex;
         justify-content: space-between;
-        background-color: green;
+        /* background-color: green; */
+        /* background-image: linear-gradient(to right, red, blue); */
       }
       h1 {
         font-size: 52px;
         margin-bottom: 32px;
+        line-height: 1.05;
       }
       p {
         font-size: 20px;
         line-height: 1.6;
         margin-bottom: 46px;
       }
+      .container-header {
+        width: 1200px;
+        position: absolute;
+        /* In relation to Parent size  */
+        left: 50%;
+        top: 50%;
+        /* In relation to Element size */
+        transform: translate(-50%, -50%);
+        /* background-color: violet; */
+      }
+      .container-header-inner {
+        width: 50%;
+        /* background-color: aquamarine; */
+      }
       .btn:link,
       .btn:visited {
         font-size: 20px;
         font-weight: 600px;
-        background-color: #e67e22;
+        background-color: #f28482;
         color: #fff;
         text-decoration: none;
         display: inline-block;
@@ -57,7 +87,7 @@
         margin-bottom: 48px;
       }
       section {
-        padding: 96px 0;
+        padding: 96, 0;
         background-color: #f7f7f7;
       }
     </style>
@@ -69,13 +99,15 @@
         <div>NAVIGATION</div>
       </nav>
 
-      <div class="container-main">
-        <h1>A healty meal delivered to your door, every single day</h1>
-        <p>
-          The smart 365-days-per-year-food subscription that will make you eat
-          healty again. Tailored to your personal tastes and nutritional needs
-        </p>
-        <a href="#" class="btn">Start eating well</a>
+      <div class="container-header">
+        <div class="container-header-inner">
+          <h1>A healty meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year-food subscription that will make you eat
+            healty again. Tailored to your personal tastes and nutritional needs
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
       </div>
     </header>
     <section>
